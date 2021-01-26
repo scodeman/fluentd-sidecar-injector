@@ -165,7 +165,7 @@ func newDeployment(sidecarInjector *sidecarinjectorv1alpha1.SidecarInjector, sec
 					Containers: []corev1.Container{
 						{
 							Name:    "webhook-handler",
-							Image:   "ghcr.io/h3poteto/fluentd-sidecar-injector:latest",
+							Image:   "ghcr.io/scodeman/fluentd-sidecar-injector:0.4.2b",
 							Command: nil,
 							Args: []string{
 								"/fluentd-sidecar-injector",
